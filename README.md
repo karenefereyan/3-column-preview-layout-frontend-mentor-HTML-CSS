@@ -1,5 +1,7 @@
 # Frontend Mentor - 3-column preview card component
 
+#### Funfact: I was wondering why the site wasn't three columns on desktop. Only to realize I had set a media query targeting devices with a max-width of 7680px, when infact, I was trying to target those with a max-width of 768px. I can't even believe I could make such a mistake. Just a simple mistype. Chai. Anyways, I feel that debugguging errors in ones' code is the real deal. Debuggers are super humans. Believe me.
+
 ![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
