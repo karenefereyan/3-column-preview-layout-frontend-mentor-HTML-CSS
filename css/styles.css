@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --sedans-orange:hsl(31, 77%, 52%);
+    --suv-dark-cyan:hsl(184, 100%, 22%);
+    --luxury-very-dark-cyan: hsl(179, 100%, 13%);
+    --text-transparent-white:hsla(0, 0%, 100%, 0.75);
+    --background-bg-headings: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--background-bg-headings);
+    color: var(--text-transparent-white);
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+h1,
+p{
+    margin: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 3em auto;
+}
+
+#cars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-card{
+    height: auto;
+    width: 25%;
+    padding: 50px 30px;
+}
+
+.car-card:first-child{
+    background-color: var(--sedans-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.car-card:first-child > a{
+    color: var(--sedans-orange);
+}
+
+.car-card:first-child > a:hover{
+   color: var(--text-transparent-white);
+   background: var(--sedans-orange);
+   border: 2px solid var(--text-transparent-white);
+}
+
+.car-card:nth-child(2){
+    background-color: var(--suv-dark-cyan);
+}
+
+.car-card:nth-child(2) > a{
+    color: var(--suv-dark-cyan);
+}
+
+.car-card:nth-child(2) > a:hover{
+    color: var(--text-transparent-white);
+    background: var(--suv-dark-cyan);
+    border: 2px solid var(--text-transparent-white);
+}
+
+
+.car-card:nth-child(3){
+    background-color: var(--luxury-very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.car-card:nth-child(3) > a{
+    color: var(--luxury-very-dark-cyan);
+}
+
+.car-card:nth-child(3) > a:hover{
+    color: var(--text-transparent-white);
+    background: var(--luxury-very-dark-cyan);
+    border: 2px solid var(--text-transparent-white);
+}
+
+.car-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.car-card h1{
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    margin-bottom:1em;
+    font-size: 2.5em;
+}
+
+.car-card p{
+    font-size: 14px;
+    margin-bottom: 4.5em;
+    line-height: 1.5em;
+}
+
+.car-card .styled-link{
+    background-color:var(--background-bg-headings);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 11px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    color: var(--sedans-orange);
+    margin-bottom: 1.5em;
+}
+
+.attribution  > a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:768px) {
+    #cars{
+        flex-direction: column;
+    }
+    .car-card{
+        width: 75%;
+    }
+    .car-card:first-child{
+        border-radius: 10px 10px 0 0;
+    }
+    .car-card:nth-child(3){
+        border-radius: 0 0 10px 10px;
+    }
+    .car-card h1{
+        margin-bottom: .75em;
+    }
+    .car-card p{
+        margin-bottom: 3em;
+    }
+}
+
+@media screen and (max-width:480px){
+    .car-card{
+        width: 100%;
+    }
+    
+}
